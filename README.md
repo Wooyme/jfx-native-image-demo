@@ -1,5 +1,6 @@
 JavaFX Native Image Demo
 ====================
+<img src="victory.png">
 
 # Before Build
 * openJDK8
