@@ -1,0 +1,37 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="co.zzyun.client.UIController"
+          xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10"
+          style="-fx-font-family: 'DejaVu Sans Mono';-fx-font-size: 15px;-fx-font-weight: bold">
+    <padding>
+        <Insets top="10" right="10" bottom="5" left="10"/>
+    </padding>
+    <Label text="Remote Address"
+           GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="remoteAddressTextField"
+               GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="200"/>
+    <Label text="Remote Port"
+           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="remotePortTextField"
+               GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="200"/>
+    <!--Auth-->
+    <Label text="Username"
+           GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="usernameTextField"
+               GridPane.columnIndex="1" GridPane.rowIndex="4" prefWidth="200"/>
+    <Label text="Password"
+           GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <PasswordField fx:id="passwordTextField"
+                   GridPane.columnIndex="1" GridPane.rowIndex="5" prefWidth="200"/>
+    <Label text="Status"
+           GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <Label fx:id="statusLabel" text="尚未连接"  GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <HBox spacing="10" alignment="bottom_right"
+          GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2">
+        <Button text="Save" onAction="#onAddButtonClicked"/>
+        <Button text="Remove" onAction="#onRemoveButtonClicked"/>
+        <Button text="Confirm" onAction="#onConfirmButtonClicked"/>
+    </HBox>
+    <ListView fx:id="listView" GridPane.columnIndex="4" GridPane.rowSpan="8" prefHeight="250"/>
+</GridPane>
