@@ -91,6 +91,6 @@ Graalvm's windows version is still an  EAP, so it's **so fucking  uncertain**
 6. replace the old one in `link.bat` and run it. (The reason why link.bat works is that I added the argument of `/FORCE:UNRESOLVED`)
 7. If everything is right, u will get the executable file.
 8. U also need to assign `java.library.path` which is `path_to_openjfx_source/build/sdk/rt/bin`
-9. Because of some bug, u need to add some other arguments to disable some native functions. ` -Dprism.order=sw -Dprism.nativepisces=false -Dprism.allowhidpi=false -Dprism.text=t2k`
+9. Because of some bug, u need to add some other arguments to disable some native features. ` -Dprism.order=sw -Dprism.nativepisces=false -Dprism.allowhidpi=false -Dprism.text=t2k`
 10. font_t2k is from oraclejdk, so u need to copy javafx_font_t2k.dll from graalvm ee to ur java.library.path. (It's may illegal,but who cares.)
 11. U will see the window and the black console window  if nothing wrong. To avoid open the console, u need to compile `main.cpp` and start from it.
