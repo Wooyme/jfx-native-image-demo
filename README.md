@@ -1,5 +1,7 @@
 JavaFX Native Image Demo
 ====================
+# If GluonVM's plugin bas supported building native image on windows, this repo is no longer useful.
+
 <img src="victory.png">
 
 # Before Build
